@@ -1,0 +1,165 @@
+PS E:\MyProjects> dotnet new angular -o smart-saver-app                                                                 
+Welcome to .NET Core 3.1!
+---------------------
+SDK Version: 3.1.101
+
+Telemetry
+---------
+The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Find out what's new: https://aka.ms/dotnet-whats-new
+Learn about the installed HTTPS developer cert: https://aka.ms/aspnet-core-https
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+Write your first app: https://aka.ms/first-net-core-app
+--------------------------------------------------------------------------------------
+Getting ready...
+The template "ASP.NET Core with Angular" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on smart-saver-app\smart-saver-app.csproj...
+  Restore completed in 1.39 sec for E:\MyProjects\smart-saver-app\smart-saver-app.csproj.
+
+Restore succeeded.
+
+PS E:\MyProjects> dotnet build                                                                                          Microsoft (R) Build Engine version 16.4.0+e901037fe for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
+PS E:\MyProjects> dir                                                                                                   
+
+    Directory: E:\MyProjects
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       09-02-2020     00:12                smart-saver-app
+-a----       14-01-2020     20:35          13072 Website requirement-Teachers Rating.docx
+
+
+PS E:\MyProjects> cd .\smart-saver-app\                                                                                 PS E:\MyProjects\smart-saver-app> dir                                                                                   
+
+    Directory: E:\MyProjects\smart-saver-app
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       09-02-2020     00:12                ClientApp
+d-----       09-02-2020     00:12                Controllers
+d-----       09-02-2020     00:12                obj
+d-----       09-02-2020     00:12                Pages
+d-----       09-02-2020     00:12                Properties
+d-----       09-02-2020     00:12                wwwroot
+-a----       09-02-2020     00:12           3765 .gitignore
+-a----       09-02-2020     00:12            162 appsettings.Development.json
+-a----       09-02-2020     00:12            189 appsettings.json
+-a----       09-02-2020     00:12            723 Program.cs
+-a----       09-02-2020     00:12           2842 smart-saver-app.csproj
+-a----       09-02-2020     00:12           2517 Startup.cs
+-a----       09-02-2020     00:12            311 WeatherForecast.cs
+
+
+PS E:\MyProjects\smart-saver-app> dotnet build smart-saver-app.csproj                                                   Microsoft (R) Build Engine version 16.4.0+e901037fe for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 38.76 ms for E:\MyProjects\smart-saver-app\smart-saver-app.csproj.
+  smart-saver-app -> E:\MyProjects\smart-saver-app\bin\Debug\netcoreapp3.1\smart-saver-app.dll
+  smart-saver-app -> E:\MyProjects\smart-saver-app\bin\Debug\netcoreapp3.1\smart-saver-app.Views.dll
+  v12.15.0
+  Restoring dependencies using 'npm'. This may take several minutes...
+
+  > node-sass@4.13.0 install E:\MyProjects\smart-saver-app\ClientApp\node_modules\node-sass
+  > node scripts/install.js
+
+  Cached binary found at C:\Users\DELL\AppData\Roaming\npm-cache\node-sass\4.13.0\win32-x64-72_binding.node
+
+  > core-js@3.2.1 postinstall E:\MyProjects\smart-saver-app\ClientApp\node_modules\@angular-devkit\build-angular\node_modules\core-js
+  > node scripts/postinstall || echo "ignore"
+
+  [96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+  [96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+  [96m>[94m https://opencollective.com/core-js [0m
+  [96m>[94m https://www.patreon.com/zloirock [0m
+
+  [96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+  > core-js@2.6.10 postinstall E:\MyProjects\smart-saver-app\ClientApp\node_modules\babel-runtime\node_modules\core-js
+  > node postinstall || echo "ignore"
+
+  [96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+  [96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+  [96m>[94m https://opencollective.com/core-js [0m
+  [96m>[94m https://www.patreon.com/zloirock [0m
+
+  [96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+  > core-js@2.6.10 postinstall E:\MyProjects\smart-saver-app\ClientApp\node_modules\oidc-client\node_modules\core-js
+  > node postinstall || echo "ignore"
+
+
+  > @angular/cli@8.3.14 postinstall E:\MyProjects\smart-saver-app\ClientApp\node_modules\@angular\cli
+  > node ./bin/postinstall/script.js
+
+
+  > core-js@3.3.5 postinstall E:\MyProjects\smart-saver-app\ClientApp\node_modules\core-js
+  > node postinstall || echo "ignore"
+
+
+  > node-sass@4.13.0 postinstall E:\MyProjects\smart-saver-app\ClientApp\node_modules\node-sass
+  > node scripts/build.js
+
+  Binary found at E:\MyProjects\smart-saver-app\ClientApp\node_modules\node-sass\vendor\win32-x64-72\binding.node
+  Testing binary
+  Binary is fine
+  npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\webpack-dev-server\node_modules\fsevents):
+  npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+  npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\watchpack\node_modules\fsevents):
+  npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+  npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\@angular\compiler-cli\node_modules\fsevents):
+  npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+  npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.1 (node_modules\fsevents):
+  npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+  added 1332 packages from 1113 contributors and audited 17096 packages in 192.884s
+  found 9 vulnerabilities (1 low, 3 moderate, 5 high)
+    run `npm audit fix` to fix them, or `npm audit` for details
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:03:34.24
+PS E:\MyProjects\smart-saver-app> dotnet build smart-saver-app.csproj                                                   Microsoft (R) Build Engine version 16.4.0+e901037fe for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 37.69 ms for E:\MyProjects\smart-saver-app\smart-saver-app.csproj.
+  smart-saver-app -> E:\MyProjects\smart-saver-app\bin\Debug\netcoreapp3.1\smart-saver-app.dll
+  smart-saver-app -> E:\MyProjects\smart-saver-app\bin\Debug\netcoreapp3.1\smart-saver-app.Views.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.80
+PS E:\MyProjects\smart-saver-app> dotnet run                                                                            info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: E:\MyProjects\smart-saver-app
+Browserslist: caniuse-lite is outdated. Please run next command `npm update`fail: Microsoft.AspNetCore.SpaServices[0]
+      Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+ 
